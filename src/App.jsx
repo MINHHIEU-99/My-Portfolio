@@ -13,7 +13,7 @@ function App() {
             <Home />
             <About />
             <Portfolio />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Contact />
             <Footer />
             <ScrollToTop />
