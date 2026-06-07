@@ -155,7 +155,7 @@ const Home = () => {
                                             rel="noopener noreferrer"
                                             download={
                                                 btn.href.endsWith('.pdf')
-                                                    ? 'Hieu_Bui_CV.pdf'
+                                                    ? 'Bui_Minh_Hieu_CV.pdf'
                                                     : undefined
                                             }
                                         >
@@ -249,7 +249,7 @@ const Home = () => {
                         <div className="relative z-10">
                             <img
                                 src={homeData.img}
-                                alt="Hizkia Siahaan Profile"
+                                alt="Bui Minh Hieu Profile"
                                 className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-cover rounded-full shadow-2xl dark:shadow-gray-800 border-8 border-white dark:border-gray-800 hover:shadow-3xl hover:-translate-y-2 transition-all duration-300"
                             />
                         </div>

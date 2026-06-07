@@ -1,15 +1,15 @@
 const homeData = {
     title: 'Hi, I’m Hieu Bui 👋',
     typingTexts: [
-        'Frontend Developer',
-        'React Enthusiast',
-        'Tailwind Warrior',
-        'UI/UX Explorer',
+        'Junior Software Engineer',
+        'Fullstack Web Developer',
+        'AI / ML Engineer',
+        'Computer Vision Enthusiast',
     ],
     description:
-        'I build modern, responsive web apps with clean UI and smooth UX  blending design and code to create experiences that feel intuitive, fast, and delightful to use.',
+        'Junior Software Engineer with 2 years of experience in fullstack web development and AI-integrated applications  building responsive UIs, API backends, and ML core from data collection and model training to optimization and production deployment.',
 
-    img: '/assets/avatar.jpeg',
+    img: '/assets/hieu.jpeg',
     buttons: [
         {
             label: 'Explore My Project',
@@ -18,15 +18,15 @@ const homeData = {
         },
         {
             label: 'Download My CV',
-            href: '/assets/Hieu_Bui_CV.pdf',
+            href: '/assets/myCV__ML_VT.pdf',
             type: 'secondary',
         },
     ],
     floatingIcons: [
-        { icon: 'bx bxl-html5', color: '#e34c26', label: 'HTML' },
-        { icon: 'bx bxl-css3', color: '#264de4', label: 'CSS' },
-        { icon: 'bx bxl-javascript', color: '#f0db4f', label: 'JavaScript' },
+        { icon: 'bx bxl-python', color: '#3776ab', label: 'Python' },
+        { icon: 'bx bxl-tensorflow', color: '#ff6f00', label: 'TensorFlow' },
         { icon: 'bx bxl-react', color: '#61dbfb', label: 'React' },
+        { icon: 'bx bxl-javascript', color: '#f0db4f', label: 'JavaScript' },
     ],
     socialMedia: [
         {
@@ -49,17 +49,17 @@ const homeData = {
     stats: [
         {
             label: 'Experience',
-            value: '1+ Years',
+            value: '2+ Years',
             icon: 'bx bx-briefcase',
         },
         {
             label: 'Main Language',
-            value: 'JavaScript',
-            icon: 'bx bxl-javascript',
+            value: 'Python',
+            icon: 'bx bxl-python',
         },
         {
             label: 'Total Projects',
-            value: '2 Projects',
+            value: '7+ Projects',
             icon: 'bx bx-code-alt',
         },
     ],

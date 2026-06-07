@@ -9,7 +9,7 @@ const Portfolio = () => {
     return (
         <section
             id="portfolio"
-            className="min-h-screen pb-20 bg-white dark:bg-gray-800 pt-20"
+            className="min-h-screen pb-10 bg-white dark:bg-gray-800 pt-10"
             data-aos-duration="1000"
             data-aos="fade-down"
         >
@@ -54,11 +54,10 @@ const Portfolio = () => {
                         <button
                             key={tab.value}
                             onClick={() => setActiveTab(tab.value)}
-                            className={`flex items-center gap-2 px-5 py-3 rounded-lg shadow-lg text-sm font-medium transition-all ${
-                                activeTab === tab.value
-                                    ? 'bg-gray-800 text-white dark:bg-white dark:text-gray-800'
-                                    : 'bg-white text-gray-800 dark:bg-gray-800 dark:text-white border border-white'
-                            }`}
+                            className={`flex items-center gap-2 px-5 py-3 rounded-lg shadow-lg text-sm font-medium transition-all ${activeTab === tab.value
+                                ? 'bg-gray-800 text-white dark:bg-white dark:text-gray-800'
+                                : 'bg-white text-gray-800 dark:bg-gray-800 dark:text-white border border-white'
+                                }`}
                         >
                             <i className={tab.icon}></i>
                             {tab.label}

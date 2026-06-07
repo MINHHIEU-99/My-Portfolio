@@ -1,14 +1,7 @@
 import aboutData from '../data/aboutData.jsx';
 import Tippy from '@tippyjs/react';
-import Swal from 'sweetalert2';
 
 const About = () => {
-    const resumeButtonClasses = `inline-flex items-center justify-center px-6 py-3 font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
-        aboutData.resume.type === 'primary'
-            ? 'bg-gray-800 dark:bg-white text-white dark:text-gray-800 hover:bg-gray-800 dark:hover:bg-gray-100'
-            : 'border-2 border-gray-800 dark:border-white text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-gray-800'
-    }`;
-
     return (
         <section
             id="about"
@@ -131,27 +124,6 @@ const About = () => {
                         </ul>
 
                         <Tippy content="Download My Resume">
-                            {/* <button
-                                onClick={() => {
-                                    Swal.fire({
-                                        title: 'Not Available Yet 😅',
-                                        text: 'My resume is still in progress. Please check back later!',
-                                        icon: 'info',
-                                        confirmButtonColor: '#1F2937',
-                                        confirmButtonText: 'Alright',
-                                    });
-                                }}
-                                className={resumeButtonClasses}
-                                aria-label="Download Resume"
-                                data-aos-delay="600"
-                                data-aos="fade-down"
-                            >
-                                <i
-                                    className={`${aboutData.resume.icon} text-lg mr-2`}
-                                    aria-hidden="true"
-                                ></i>
-                                {aboutData.resume.label}
-                            </button> */}
                             <a
                                 href={aboutData.resume.href}
                                 className={`inline-flex items-center justify-center px-6 py-3 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1
@@ -166,7 +138,7 @@ const About = () => {
                                 rel="noopener noreferrer"
                                 download={
                                     aboutData.resume.href.endsWith('.pdf')
-                                        ? 'Hieu_Bui_CV.pdf'
+                                        ? 'Bui_Minh_Hieu_CV.pdf'
                                         : undefined
                                 }
                             >

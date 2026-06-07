@@ -81,7 +81,7 @@ const Navbar = () => {
             >
                 <div className="container">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="flex items-center justify-between py-4">
+                        <div className="flex items-center justify-between">
                             <a href="#" className="flex items-center gap-2">
                                 <i className="bx bx-code-alt text-2xl text-gray-800 dark:text-white"></i>
                                 <h1 className="text-2xl font-semibold text-gray-800 dark:text-white">
@@ -95,9 +95,8 @@ const Navbar = () => {
                                 aria-label="Toggle menu"
                             >
                                 <i
-                                    className={`bx ${
-                                        isMenuOpen ? 'bx-x' : 'bx-menu'
-                                    } text-2xl`}
+                                    className={`bx ${isMenuOpen ? 'bx-x' : 'bx-menu'
+                                        } text-2xl`}
                                 ></i>
                             </button>
 
@@ -108,11 +107,10 @@ const Navbar = () => {
                                         <a
                                             href={`#${item.id}`}
                                             onClick={() => handleClick(item.id)}
-                                            className={`flex items-center gap-1 px-3 py-2 rounded-lg transition-all duration-200 ${
-                                                activeId === item.id
-                                                    ? 'bg-gray-800 shadow-2xl dark:bg-white dark:text-gray-800 text-white'
-                                                    : 'text-gray-800 dark:text-white hover:text-blue-600'
-                                            }`}
+                                            className={`flex items-center gap-1 px-3 py-2 rounded-lg transition-all duration-200 ${activeId === item.id
+                                                ? 'bg-gray-800 shadow-2xl dark:bg-white dark:text-gray-800 text-white'
+                                                : 'text-gray-800 dark:text-white hover:text-blue-600'
+                                                }`}
                                         >
                                             <i
                                                 className={`bx ${item.icon}`}
@@ -129,9 +127,8 @@ const Navbar = () => {
                                 aria-label="Toggle dark mode"
                             >
                                 <i
-                                    className={`bx ${
-                                        isDarkMode ? 'bx-sun' : 'bx-moon'
-                                    } text-xl`}
+                                    className={`bx ${isDarkMode ? 'bx-sun' : 'bx-moon'
+                                        } text-xl`}
                                 ></i>
                                 <span>
                                     {isDarkMode ? 'Light Mode' : 'Dark Mode'}
@@ -144,9 +141,8 @@ const Navbar = () => {
 
             {/* Off-Canvas Mobile Menu */}
             <div
-                className={`fixed top-0 right-0 h-full w-70 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300 ease-in-out z-50 md:hidden ${
-                    isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-                }`}
+                className={`fixed top-0 right-0 h-full w-70 bg-white dark:bg-gray-800 shadow-xl transform transition-transform duration-300 ease-in-out z-50 md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+                    }`}
             >
                 <div className="flex flex-col h-full">
                     {/* Header */}
@@ -172,25 +168,22 @@ const Navbar = () => {
                             {navbarData.map((item, index) => (
                                 <li
                                     key={item.id}
-                                    className={`transform transition-all duration-300 ${
-                                        isMenuOpen
-                                            ? 'translate-x-0 opacity-100'
-                                            : 'translate-x-10 opacity-0'
-                                    }`}
+                                    className={`transform transition-all duration-300 ${isMenuOpen
+                                        ? 'translate-x-0 opacity-100'
+                                        : 'translate-x-10 opacity-0'
+                                        }`}
                                     style={{
-                                        transitionDelay: `${
-                                            isMenuOpen ? index * 0.1 : 0
-                                        }s`,
+                                        transitionDelay: `${isMenuOpen ? index * 0.1 : 0
+                                            }s`,
                                     }}
                                 >
                                     <a
                                         href={`#${item.id}`}
                                         onClick={() => handleClick(item.id)}
-                                        className={`flex items-center gap-3 text-lg font-medium px-4 py-3 rounded-lg transition-all duration-200 ${
-                                            activeId === item.id
-                                                ? 'bg-gray-800 dark:bg-white dark:text-gray-800 text-white shadow-lg'
-                                                : 'text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700'
-                                        }`}
+                                        className={`flex items-center gap-3 text-lg font-medium px-4 py-3 rounded-lg transition-all duration-200 ${activeId === item.id
+                                            ? 'bg-gray-800 dark:bg-white dark:text-gray-800 text-white shadow-lg'
+                                            : 'text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+                                            }`}
                                     >
                                         <i
                                             className={`bx ${item.icon} text-xl`}
@@ -210,9 +203,8 @@ const Navbar = () => {
                                     aria-label="Toggle dark mode"
                                 >
                                     <i
-                                        className={`bx ${
-                                            isDarkMode ? 'bx-sun' : 'bx-moon'
-                                        } text-xl`}
+                                        className={`bx ${isDarkMode ? 'bx-sun' : 'bx-moon'
+                                            } text-xl`}
                                     ></i>
                                     <span>
                                         {isDarkMode
